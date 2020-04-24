@@ -99,7 +99,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/suite.xml</suiteXmlFile>
-                        <!--suiteXmlFile>src/test/resources/suite_with_failed_tests.xml</suiteXmlFile-->
+                        <suiteXmlFile>src/test/resources/suite_with_failed_tests.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
                 <executions>
