@@ -1,3 +1,5 @@
+package testng.examples;
+
 import org.testng.annotations.*;
 
 public class BeforeAndAfterAnnotations {
@@ -29,19 +31,6 @@ public class BeforeAndAfterAnnotations {
 
         System.out.println("Ovo je @afterMethod");
 
-    }
-
-
-
-
-    @Test
-    public void prviTest(){
-
-        System.out.println("\nPocetak prvog testa!");
-
-        System.out.println("Ovo je prvi test!");
-
-        System.out.println("Kraj prvog testa!\n");
     }
 
 
