@@ -1,0 +1,10 @@
+/target/
+/test-output/
+.classpath
+.idea/
+.project
+.settings/
+.classpath
+.project
+*.log
+endavalogdata*
