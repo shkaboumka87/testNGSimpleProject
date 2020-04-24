@@ -36,7 +36,7 @@ public class TestAnnotation {
 
         System.out.println("Ovo je treci test!");
 
-        System.out.println("Kraj treceg testa!\n");
+        System.out.println("Kraj treceg. testa!\n");
 
     }
 

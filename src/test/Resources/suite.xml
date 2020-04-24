@@ -3,10 +3,18 @@
 
 <suite name="Suite Suite Suite">
 
+
+    <test verbose="2" name="BeforeAndAfterAnnotation Klasa">
+        <classes>
+            <class name="testng.examples.BeforeAndAfterAnnotations" />
+        </classes>
+    </test>
+
     <test verbose="2" name="TestAnnotation Klasa">
         <classes>
             <class name="testng.examples.TestAnnotation" />
         </classes>
     </test>
+
 
 </suite>

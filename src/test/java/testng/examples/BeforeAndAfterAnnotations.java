@@ -34,6 +34,8 @@ public class BeforeAndAfterAnnotations {
     }
 
 
+
+
     @Test
     public void prviTest(){
 
@@ -42,7 +44,6 @@ public class BeforeAndAfterAnnotations {
         System.out.println("Ovo je prvi test!");
 
         System.out.println("Kraj prvog testa!\n");
-
     }
 
 
@@ -54,7 +55,21 @@ public class BeforeAndAfterAnnotations {
         System.out.println("Ovo je drugi test!");
 
         System.out.println("Kraj drugog testa!\n");
+
     }
+
+
+    @Test
+    public void treciTest(){
+
+        System.out.println("\nPocetak treceg testa!");
+
+        System.out.println("Ovo je treci test!");
+
+        System.out.println("Kraj treceg. testa!\n");
+
+    }
+
 
 
 }
