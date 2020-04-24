@@ -1,5 +1,3 @@
-package testng.examples;
-
 import org.testng.annotations.*;
 
 public class BeforeAndAfterAnnotations {

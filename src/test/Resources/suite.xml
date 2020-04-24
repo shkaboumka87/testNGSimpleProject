@@ -6,7 +6,7 @@
 
     <test verbose="2" name="BeforeAndAfterAnnotation Klasa">
         <classes>
-            <class name="testng.examples.BeforeAndAfterAnnotations" />
+            <class name="BeforeAndAfterAnnotations" />
         </classes>
     </test>
 
