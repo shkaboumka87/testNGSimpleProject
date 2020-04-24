@@ -29,5 +29,17 @@ public class TestAnnotation {
     }
 
 
+    @Test
+    public void treciTest(){
+
+        System.out.println("\nPocetak treceg testa!");
+
+        System.out.println("Ovo je treci test!");
+
+        System.out.println("Kraj treceg testa!\n");
+
+    }
+
+
 
 }

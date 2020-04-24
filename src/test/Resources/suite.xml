@@ -9,10 +9,4 @@
         </classes>
     </test>
 
-
-    <test verbose="2" name="BeforeAndAfterAnnotations Klasa">
-        <classes>
-            <class name="testng.examples.BeforeAndAfterAnnotations" />
-        </classes>
-    </test>
 </suite>
