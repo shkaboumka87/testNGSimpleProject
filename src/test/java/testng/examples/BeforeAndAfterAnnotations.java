@@ -8,28 +8,28 @@ public class BeforeAndAfterAnnotations {
     @BeforeClass
     public void izvrsiPreKlase(){
 
-        System.out.println("Ovo je @beforeClass");
+        System.out.println("\nOvo je @beforeClass");
 
     }
 
     @BeforeMethod
     public void izvrsiPreMetode(){
 
-        System.out.println("Ovo je @beforeMethod");
+        System.out.println("\nOvo je @beforeMethod");
 
     }
 
     @AfterClass
     public void izvrsiNakonKlase(){
 
-        System.out.println("Ovo je @afterClass");
+        System.out.println("\nOvo je @afterClass");
 
     }
 
     @AfterMethod
     public void izvrsiNakonMetode(){
 
-        System.out.println("Ovo je @afterMethod");
+        System.out.println("\nOvo je @afterMethod");
 
     }
 
