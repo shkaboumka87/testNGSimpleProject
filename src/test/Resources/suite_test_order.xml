@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<!-- The set of sanity tests to execute on the system -->
+
+<suite name="Ovo je suite sa definisanim redosledom testova">
+
+
+    <test verbose="2" name="Izvrsi sve navedene testove">
+        <classes>
+            <class name="testng.primeri.Primer1BTestPriority">
+                <methods>
+                    <include name="testB" />
+                    <include name="testC" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" name="Izvrsi sve sem navedenog">
+        <classes>
+            <class name="testng.primeri.Primer2ABeforeAfterAnnotations">
+                <methods>
+                    <exclude name="drugiTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

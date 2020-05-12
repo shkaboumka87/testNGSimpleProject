@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<!-- The set of sanity tests to execute on the system -->
+
+<suite name="Ovo je suite sa parametrima">
+
+    <parameter name="korisnickoIme" value="username" />
+    <parameter name="lozinka" value="qwerty" />
+
+
+    <test verbose="2" name="Primer testa sa globalnim parametrima">
+        <classes>
+            <class name="testng.primeri.Primer5AParametersAnnotation">
+                <methods>
+                    <include name="testProveriKredencijale1" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test verbose="2" name="Primer testa sa lokalnim parametrima">
+        <classes>
+            <class name="testng.primeri.Primer5AParametersAnnotation">
+                <parameter name="lozinka" value="Ovo_je_moja_sifra_123" />
+                <methods>
+                    <include name="testProveriKredencijale1" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<!-- The set of sanity tests to execute on the system -->
+
+<suite name="Suite sa Listenerima">
+
+    <listeners>
+      <listener class-name="testng.primeri.CustomListener" />
+    </listeners>
+
+
+    <test verbose="2" name="Klase bez @Listener anotacije">
+        <classes>
+            <class name="testng.primeri.Primer2ABeforeAfterAnnotations" />
+            <class name="testng.primeri.Primer8BListeners" />
+        </classes>
+    </test>
+
+
+</suite>

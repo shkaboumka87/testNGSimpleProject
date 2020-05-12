@@ -1,20 +1,26 @@
 <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
 <!-- The set of sanity tests to execute on the system -->
 
-<suite name="Suite Suite Suite">
+<suite name="Ovo je prvi suite">
 
 
-    <test verbose="2" name="BeforeAndAfterAnnotation Klasa">
+    <test verbose="2" name="Primeri test anotacije">
         <classes>
-            <class name="testng.examples.BeforeAndAfterAnnotations" />
+            <class name="testng.primeri.Primer1ATestAnnotation" />
         </classes>
     </test>
 
-    <test verbose="2" name="TestAnnotation Klasa">
+    <test verbose="2" name="Primeri Before/After anotacija">
         <classes>
-            <class name="testng.examples.TestAnnotation" />
+            <class name="testng.primeri.Primer2ABeforeAfterAnnotations" />
         </classes>
     </test>
+
+    <!-- test verbose="2" name="Primeri Before/After anotacija">
+        <classes>
+            <class name="testng.primeri.Primer2ABeforeAfterAnnotations" />
+        </classes>
+    </test -->
 
 
 </suite>

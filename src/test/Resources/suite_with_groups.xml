@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<!-- The set of sanity tests to execute on the system -->
+
+<suite name="Ovo je prvi suite">
+
+
+    <test verbose="2" name="Izvrsi sanity testove">
+
+        <groups>
+            <run>
+                <include name="sanity"/>
+            </run>
+        </groups>
+
+
+        <classes>
+            <class name="testng.primeri.Primer6AGroups" />
+        </classes>
+
+    </test>
+
+    <test verbose="2" name="Izvrsi regression testove">
+
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+
+
+        <classes>
+            <class name="testng.primeri.Primer6AGroups" />
+        </classes>
+
+    </test>
+
+</suite>

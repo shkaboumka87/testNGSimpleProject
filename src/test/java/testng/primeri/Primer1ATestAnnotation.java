@@ -1,17 +1,14 @@
-package testng.examples;
+package testng.primeri;
 
 import org.testng.annotations.Test;
 
-public class TestAnnotation {
+@Test
+public class Primer1ATestAnnotation {
 
-
-
-    @Test
+   @Test
     public void prviTest(){
 
         System.out.println("\nPocetak prvog testa!");
-
-        System.out.println("Ovo je prvi test!");
 
         System.out.println("Kraj prvog testa!\n");
     }
@@ -22,24 +19,15 @@ public class TestAnnotation {
 
         System.out.println("\nPocetak drugog testa!");
 
-        System.out.println("Ovo je drugi test!");
-
         System.out.println("Kraj drugog testa!\n");
-
     }
 
 
-    @Test
+    @Test( enabled = false )
     public void treciTest(){
 
         System.out.println("\nPocetak treceg testa!");
 
-        System.out.println("Ovo je treci test!");
-
-        System.out.println("Kraj treceg. testa!\n");
-
+        System.out.println("Kraj treceg testa!\n");
     }
-
-
-
 }
