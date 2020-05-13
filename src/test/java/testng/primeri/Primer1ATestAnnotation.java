@@ -2,10 +2,9 @@ package testng.primeri;
 
 import org.testng.annotations.Test;
 
-@Test
 public class Primer1ATestAnnotation {
 
-   @Test
+   @Test //( description = "Ovo je opis prvog testa", enabled = false )
     public void prviTest(){
 
         System.out.println("\nPocetak prvog testa!");
@@ -23,7 +22,7 @@ public class Primer1ATestAnnotation {
     }
 
 
-    @Test( enabled = false )
+    @Test
     public void treciTest(){
 
         System.out.println("\nPocetak treceg testa!");

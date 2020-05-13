@@ -5,7 +5,7 @@
 
     <parameter name="lozinka" value="qwerty" />
 
-    <test verbose="2" name="Primer testa sa lokalnim parametrima">
+    <test verbose="2" name="Primer testa sa opcionim parametrima">
         <classes>
             <class name="testng.primeri.Primer5AParametersAnnotation">
                 <methods>

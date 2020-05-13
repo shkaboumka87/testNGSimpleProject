@@ -17,7 +17,7 @@ public class Primer4BSoftAssert extends PomocnaKlasa{
 
         System.out.println("\nLozinka je - " + lozinka);
 
-        softAssert.assertEquals(lozinka, LOZINKA, "Neispravna lozinka!");
+        softAssert.assertEquals(lozinka, LOZINKA, "Neispravna lozinka");
 
 
         softAssert.assertAll();

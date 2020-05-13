@@ -32,6 +32,14 @@ public class CustomListener implements ITestListener {
 
     }
 
+    public void onTestStart(ITestResult testResult) {
+
+        System.out.println("\n------------------------------------------");
+
+        System.out.println("\nPokrecem test - " + testResult.getName());
+
+    }
+
 
     public void onTestSuccess(ITestResult testResult) {
 
@@ -67,15 +75,6 @@ public class CustomListener implements ITestListener {
 
         preskocenoTestova++;
     }
-
-    public void onTestStart(ITestResult testResult) {
-
-        System.out.println("\n------------------------------------------");
-
-        System.out.println("\nPokrecem test - " + testResult.getName());
-
-    }
-
 
 
     public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {

@@ -10,14 +10,14 @@ public class PomocnaKlasa {
 
 
     //@BeforeClass
-    public void izvrsiPreKlasePrimer2(){
+    public void izvrsiPreKlase2(){
 
         System.out.println("\nOvo je @BeforeClass nasledjene klase.");
     }
 
 
     //@AfterClass
-    public void izvrsiNakonKlasePrimer2(){
+    public void izvrsiNakonKlase2(){
 
         System.out.println("\nOvo je @AfterClass nasledjene klase.");
     }

@@ -13,7 +13,7 @@ public class Primer2ABeforeAfterAnnotations extends PomocnaKlasa {
     }
 
     @BeforeMethod
-    public void izvrsiPreMetode(){
+    public void izvrsiPreTestMetode(){
 
         System.out.println("\n*************************************************\n");
 
@@ -21,7 +21,7 @@ public class Primer2ABeforeAfterAnnotations extends PomocnaKlasa {
     }
 
     @AfterMethod
-    public void izvrsiNakonMetode(){
+    public void izvrsiNakonTestMetode(){
 
         System.out.println("\nOvo je @AfterMethod.");
 

@@ -30,7 +30,7 @@ public class Primer2BBeforeAfterAnnotationsFailedConfigAlwaysRun {
         System.out.println("\n*************************************************");
     }
 
-    @AfterClass//( alwaysRun = true )
+    @AfterClass( alwaysRun = true )
     public void izvrsiNakonKlase(){
 
         System.out.println("\nIpak izvrsi @AfterClass.");

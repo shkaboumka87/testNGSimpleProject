@@ -9,12 +9,12 @@ public class Primer4AHardAssert extends PomocnaKlasa{
     private boolean odgovarajuciKredencijali = false;
 
     @Test( dataProviderClass = DataProviders.class, dataProvider = "kredencijali" )
-    public void testDaLiSuIspravniKredencijali(String korisnickoIMe, String lozinka){
+    public void testDaLiSuIspravniKredencijali(String korisnickoIme, String lozinka){
 
 
-        System.out.println("\nIme - " + korisnickoIMe);
+        System.out.println("\nIme - " + korisnickoIme);
 
-        assertEquals(korisnickoIMe, KORISNICKO_IME, "Neispravno korisnicko ime");
+        assertEquals(korisnickoIme, KORISNICKO_IME, "Neispravno korisnicko ime!");
 
 
         System.out.println("\nLozinka je - " + lozinka);

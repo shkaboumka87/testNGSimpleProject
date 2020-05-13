@@ -4,38 +4,29 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.fail;
 
-public class Primer1BTestPriority {
+public class Primer9ARetryCount {
 
 
-    @Test( priority = 3 )
+    @Test ( retryAnalyzer = PonoviTestove.class )
     public void testA(){
 
         System.out.println("\nOvo je prvi test!");
-
     }
 
-    @Test( priority = 1 )
-    public void testB(){
+    @Test ( retryAnalyzer = PonoviTestove.class )
+    public void testB() {
 
         System.out.println("\nOvo je drugi test!");
+
     }
 
-    @Test( priority = 2 )
+    @Test ( retryAnalyzer = PonoviTestove.class )
     public void testC(){
 
         System.out.println("\nOvo je treci test!");
 
-       // fail("Obaram treci test!");
+        fail();
     }
-
-    @Test
-    public void testD(){
-
-        System.out.println("\nOvo je cetvrti test!");
-
-    }
-
-
 
 
 }

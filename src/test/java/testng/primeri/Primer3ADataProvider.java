@@ -34,15 +34,13 @@ public class Primer3ADataProvider extends PomocnaKlasa {
 
 
     //@Test( dataProvider = "ulazneVrednostiZadatka" )
-    public void testSaberiDvaBroja(int prviBroj, int drugiBroj)
-            throws InterruptedException {
+    public void testSaberiDvaBroja(int prviBroj, int drugiBroj) {
 
         System.out.println("\nZbir zadatih brojeva je: " + saberiDvaBroja(prviBroj, drugiBroj) + "\n");
 
-        Thread.sleep(5000L);
-
         System.out.println("****************************************************");
     }
+
     //@Test( dataProvider = "ulazneVrednostiZadatka" )
     public void neuspesanTest(int prviBroj){
 
