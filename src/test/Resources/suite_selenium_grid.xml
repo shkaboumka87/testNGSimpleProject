@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
 <!-- The set of sanity tests to execute on the system -->
 
-<suite parallel="true"  name="Selenium grid Suite">
+<suite parallel="tests"  name="Selenium grid Suite">
 
     <listeners>
         <listener class-name="testng.primeri.CustomListener" />

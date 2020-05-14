@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
 <!-- The set of sanity tests to execute on the system -->
 
-<suite name="Suite gde se testovi izvrsavaju u paraleli" parallel="true" thread-count="2">
+<suite name="Suite gde se testovi izvrsavaju u paraleli" parallel="tests" thread-count="2">
 
 
     <test verbose="2" name="Paralelni Testovi">
