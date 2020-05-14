@@ -22,11 +22,11 @@ public class SeleniumGrid {
     @Parameters({"tipPretrazivaca", "verzijaPretrazivaca", "operativniSistem"})
     @Test
     public void testSeleniumGrid(String tipPret, String verzijaPret, String operSistem)
-            throws InterruptedException, MalformedURLException {
+            throws MalformedURLException {
 
-        System.out.println("Operativni sistem je " + operSistem);
+        System.out.println("\nOperativni sistem je " + operSistem);
         System.out.println("Tip pretazivaca je " + tipPret);
-        System.out.println("Verzija pretazivaca je " + verzijaPret);
+        System.out.println("Verzija pretazivaca je " + verzijaPret + "\n");
 
 
         if (tipPret.equalsIgnoreCase("chrome")) {
@@ -53,12 +53,12 @@ public class SeleniumGrid {
             driver = new RemoteWebDriver(
                     new URL("http://localhost:4444/wd/hub"), firefoxOptions);
         }
-        System.out.println("Idi na https://www.google.com/");
+        System.out.println("\nIdi na https://www.google.com/");
         driver.get("https://www.google.com/");
 
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-        System.out.println("pretrazi TestTestTestTest");
+        System.out.println("\nPretrazi strig -TestTestTestTest-");
         driver.findElement(By.name("q")).sendKeys("TestTestTestTest");
 
 
@@ -69,6 +69,7 @@ public class SeleniumGrid {
     @AfterMethod(alwaysRun = true)
     public void closeBrowser(){
 
+        System.out.println("\nZatvori prozor u @afterMethod-u\n");
         if(driver != null){
             driver.quit();
         }
