@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<!-- The set of sanity tests to execute on the system -->
+
+<suite parallel="tests"  name="Selenium grid Suite">
+
+
+    <test name="Chrome">
+        <classes>
+            <class name="selenium.SeleniumGrid" />
+
+            <parameter name="tipPretrazivaca" value="chrome" />
+            <parameter name="verzijaPretrazivaca" value="80.0.3987.149" />
+            <parameter name="operativniSistem" value="LINUX" />
+        </classes>
+    </test>
+
+
+    <test name="Firefox">
+        <classes>
+            <class name="selenium.SeleniumGrid" />
+
+            <parameter name="tipPretrazivaca" value="firefox" />
+            <parameter name="verzijaPretrazivaca" value="" />
+            <parameter name="operativniSistem" value="LINUX" />
+        </classes>
+    </test>
+
+</suite>

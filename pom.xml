@@ -21,17 +21,13 @@
 
     <dependencies>
 
-
-
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.14.3</version>
+            <scope>test</scope>
         </dependency>
-
-
-
-
 
 
 
@@ -111,7 +107,7 @@
                 <version>${maven.failsafe.version}</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/suite_with_listeners.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/suite_selenium_grid.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
                 <executions>

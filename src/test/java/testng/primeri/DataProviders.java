@@ -20,7 +20,7 @@ public class DataProviders {
     private Object[][] korisnickoImeISifra(){
 
         return new Object[][] {
-                {"Gandalf", "Mellon"},
+                {"Nick Cave", "and_the_Bad_Seeds"},
                 {"username", "Mordor123!@#"} ,
                 {"username", "qwerty"}
         };

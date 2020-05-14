@@ -19,7 +19,7 @@ public class Primer5AParametersAnnotation extends PomocnaKlasa {
 
     @Parameters ({"korisnickoIme", "lozinka"})
     @Test
-    public void testProveriKredencijale2(@Optional("Gimli Sin Gloinov") String korIme, String sifra){
+    public void testProveriKredencijale2(@Optional("Igi Pop") String korIme, String sifra){
 
         daLiSuKredencijaliIspravni(korIme, sifra);
     }
