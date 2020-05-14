@@ -21,7 +21,7 @@ public class SeleniumGrid {
 
     @Parameters({"tipPretrazivaca", "verzijaPretrazivaca", "operativniSistem"})
     @Test
-    public void testSeleniuma(String tipPret, String verzijaPret, String operSistem)
+    public void testSeleniumGrid(String tipPret, String verzijaPret, String operSistem)
             throws InterruptedException, MalformedURLException {
 
         System.out.println("Operativni sistem je " + operSistem);
@@ -53,13 +53,16 @@ public class SeleniumGrid {
             driver = new RemoteWebDriver(
                     new URL("http://localhost:4444/wd/hub"), firefoxOptions);
         }
-
+        System.out.println("Idi na https://www.google.com/");
         driver.get("https://www.google.com/");
+
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+        System.out.println("pretrazi TestTestTestTest");
         driver.findElement(By.name("q")).sendKeys("TestTestTestTest");
 
 
-        Thread.sleep(10000L);
+        //Thread.sleep(10000L);
 
     }
 
