@@ -3,6 +3,10 @@
 
 <suite parallel="true"  name="Selenium grid Suite">
 
+    <listeners>
+        <listener class-name="testng.primeri.CustomListener" />
+    </listeners>
+
 
     <test name="Chrome">
         <classes>

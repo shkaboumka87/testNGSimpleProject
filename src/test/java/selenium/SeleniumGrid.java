@@ -21,10 +21,16 @@ public class SeleniumGrid {
 
     @Parameters({"tipPretrazivaca", "verzijaPretrazivaca", "operativniSistem"})
     @Test
-    public void setUpWebBrowser(String tipPret, String verzijaPret, String operSistem)
+    public void testSeleniuma(String tipPret, String verzijaPret, String operSistem)
             throws InterruptedException, MalformedURLException {
 
+        System.out.println("Operativni sistem je " + operSistem);
+        System.out.println("Tip pretazivaca je " + tipPret);
+        System.out.println("Verzija pretazivaca je " + verzijaPret);
+
+
         if (tipPret.equalsIgnoreCase("chrome")) {
+
 
             // remote masina
 
